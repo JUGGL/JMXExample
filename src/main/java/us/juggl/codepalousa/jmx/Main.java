@@ -1,12 +1,6 @@
 package us.juggl.codepalousa.jmx;
 
-import java.lang.management.ManagementFactory;
-
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-
 import net.gescobar.jmx.Management;
-
 import org.apache.log4j.Logger;
 
 public class Main {
