@@ -19,5 +19,9 @@ mvn clean package install
 ## Running
 
 ```
-mvn exec:java
+mvn exec:java -Dexec.mainClass=us.juggl.codepalousa.jmx.Main
 ```
+
+## Trying It Out
+
+Once you have the application running, open JConsole and connect to the process 

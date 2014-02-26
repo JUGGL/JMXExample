@@ -15,6 +15,22 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<configuration>
+					<mainClass>us.juggl.codepalousa.jmx.Main</mainClass>
+					<systemProperties>
+						<systemProperty>
+							<key>exec.args</key>
+							<value>-Dcom.sun.management.jmxremote.port=1099
+								-Dcom.sun.management.jmxremote.authenticate=false
+								-Dcom.sun.management.jmxremote.ssl=false</value>
+						</systemProperty>
+					</systemProperties>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -24,19 +40,15 @@
 			<version>1.2.16</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.management</groupId>
-			<artifactId>jmxri</artifactId>
-			<version>1.2.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.management</groupId>
-			<artifactId>jmxtools</artifactId>
-			<version>1.2.1</version>
-		</dependency>
-		<dependency>
 			<groupId>net.gescobar</groupId>
 			<artifactId>jmx-annotations</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+        <repository>  
+            <id>elibom</id>  
+            <url>http://repository.elibom.net/nexus/content/groups/public/</url>  
+        </repository>
+    </repositories>
 </project>
