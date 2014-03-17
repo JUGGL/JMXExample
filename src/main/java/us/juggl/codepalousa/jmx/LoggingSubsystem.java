@@ -1,12 +1,8 @@
-/**
- * 
- */
 package us.juggl.codepalousa.jmx;
 
 import net.gescobar.jmx.annotation.Description;
 import net.gescobar.jmx.annotation.ManagedAttribute;
 import net.gescobar.jmx.annotation.ManagedOperation;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -42,5 +38,10 @@ public class LoggingSubsystem {
 	public void setLogLevelForName(String name, String level) {
 		Logger.getLogger(name).setLevel(Level.toLevel(level)) ;
 		Logger.getLogger(LoggingSubsystem.class).log(Level.FATAL, "*********** Log level for '"+name+"' set to: "+Logger.getLogger(name).getLevel().toString()) ;
+	}
+
+	@ManagedOperation(description="Reset all logging configurations and default the log level for ALL packages to DEBUG")
+	public void resetLoggingConfig() {
+		Logger.getRootLogger().getLoggerRepository().resetConfiguration() ;
 	}
 }
