@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jmxexample by JUGGL</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Jmxexample</h1>
+        <p>CodepaLOUsa 2014 - Never Having To Say Sorry Again</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/JUGGL/JMXExample" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/JUGGL/JMXExample/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/JUGGL/JMXExample/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="jmx-example" class="anchor" href="#jmx-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>JMX Example</h1>
+
+<p>An example of how to use MXBean annotations and JMX 2.0 APIs to create an easily managed and maintained Java application.</p>
+
+<h2>
+<a id="pre-requisites" class="anchor" href="#pre-requisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pre-requisites</h2>
+
+<ol>
+<li>Maven 3.x</li>
+<li>Java 1.7.x</li>
+<li>Internet access for Maven to download the dependencies</li>
+</ol>
+
+<h2>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building</h2>
+
+<pre><code>mvn clean package install
+</code></pre>
+
+<h2>
+<a id="running" class="anchor" href="#running" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running</h2>
+
+<pre><code>mvn exec:java -Dexec.mainClass=us.juggl.codepalousa.jmx.Main
+</code></pre>
+
+<h2>
+<a id="trying-it-out" class="anchor" href="#trying-it-out" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trying It Out</h2>
+
+<p>Once you have the application running, open JConsole and connect to the process </p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/JUGGL">JUGGL</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
